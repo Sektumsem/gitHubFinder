@@ -47,9 +47,30 @@ class UI{
                     </div>
                 </div>
             </div>
-            `
+            `;
+            document.getElementById('repos').innerHTML=output;
         });
-
     }
+    showAlter(message, className){
+        this.clearAlert();
+        const div=document.createElement('div');
+        div.className=className;
+        div.appendChild(document.createTextNode(message));
+        const conteiner = document.querySelector('.searchContainer');
+        const search = document.querySelector('.search');
+        conteiner.insertBefore(div, search);
+
+        setTimeout(()=>{
+            this.clearAlert();
+        },3000);
+    }
+
+    clearAlert(){
+        const currentAlert=document.querySelector('.alert');
+        if(currentAlert){
+            currentAlert.remove();
+        }
+    }
+
 }
 
