@@ -38,12 +38,12 @@ class UI{
             <div class="card card-body mb-2">
                 <div class="row">
                     <div class="col-md-6">
-                    <a href="${user.html_url}">${repo.name}</a>
+                    <a href="${repo.html_url}">${repo.name}</a>
                     </div>
                     <div class="col-md-6">
-                        <span class="badge badge-primary">Stars: ${user.stargazers_count}</span>
-                        <span class="badge badge-secondary">Watchers: ${user.watchers_count}</span>
-                        <span class="badge badge-success">Followers: ${user.forks_count}</span>
+                        <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
+                        <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
+                        <span class="badge badge-success">Followers: ${repo.forks_count}</span>
                     </div>
                 </div>
             </div>
