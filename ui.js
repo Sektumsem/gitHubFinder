@@ -71,6 +71,9 @@ class UI{
             currentAlert.remove();
         }
     }
+    clearProfile(){
+        this.profile.innerHTML='';
+    }
 
 }
 
